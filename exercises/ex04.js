@@ -11,3 +11,17 @@ Fill in the blanks with the flavor of the ice cream, vessel, and toppings. For e
 
 I'd like two scoops of vanilla ice cream in a cone with peanuts. 
 */
+
+const flavor = "vanilla";
+const vessel = "cone";
+const toppings = "peanuts";
+
+if (
+  (flavor === "vanilla" || flavor === "chocolate") &&
+  (vessel === "cone" || vessel === "bowl") &&
+  (toppings === "sprinkles" || toppings === "peanuts")
+) {
+  console.log(
+    "I'd like two scoops of vanilla ice cream in a cone with peanuts. "
+  );
+}

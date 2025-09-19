@@ -5,7 +5,7 @@ cry();
 Returns: boohoo!
 */
 
-const cry = function () {
+const cry = function test() {
   return "boohoo!";
 };
 

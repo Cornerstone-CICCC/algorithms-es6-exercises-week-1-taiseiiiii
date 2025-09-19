@@ -22,6 +22,6 @@ if (
   (toppings === "sprinkles" || toppings === "peanuts")
 ) {
   console.log(
-    "I'd like two scoops of vanilla ice cream in a cone with peanuts. "
+    `I'd like two scoops of ${flavor} ice cream in a ${vessel} with ${toppings}. `
   );
 }

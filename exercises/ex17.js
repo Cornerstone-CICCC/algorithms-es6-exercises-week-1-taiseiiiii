@@ -9,12 +9,7 @@ const laugh = (cnt) => {
   if (isNaN(cnt)) {
     return "Please input number";
   }
-  let res = "";
-  for (let i = 0; i < cnt; i++) {
-    res += "ha";
-  }
-  res += "!";
-  return res;
+  return "ha".repeat(cnt) + "!";
 };
 
-console.log(laugh(3));
+console.log(laugh(5));

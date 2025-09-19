@@ -29,9 +29,22 @@ This will be the most complicated program you've written yet, so take some time 
 */
 
 function makeLine(length) {
-    var line = "";
-    for (var j = 1; j <= length; j++) {
-      line += "* "
-    }
-    return line + "\n";
+  var line = "";
+  for (var j = 1; j <= length; j++) {
+    line += "* ";
+  }
+  return line + "\n";
 }
+
+function buildTriangle(width) {
+  if (isNaN(width)) {
+    return "Please input number";
+  }
+  let res = "";
+  for (let i = 1; i <= width; i++) {
+    res += makeLine(i);
+  }
+  return res;
+}
+
+console.log(buildTriangle(10));
